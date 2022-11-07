@@ -1,0 +1,117 @@
+*{
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+}
+#texto{
+    text-align: center;
+    margin-bottom: 10px; /*Espaçmento do teXto com os cards*/
+    color: rgb(0, 0, 0);
+}
+#texto #p{
+    text-align: center;
+    margin-bottom: 5px; /*Espaçmento do teXto com os cards*/ 
+}
+.container{
+    width: 100%;
+    height: 100%;
+    margin: auto;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 10px 20px 150px 20px;
+  }
+  .container .card{
+    width: 400px;
+    height: 380px;
+    padding: 30px 10px;
+    text-align: center;
+    background:rgb(255, 255, 255);
+    box-shadow: 2px 5px 15px rgb(104, 104, 104);
+    transition: 0.5s;
+    color: #282a2c;
+    margin-left: 50px;
+    margin: #282a2c;
+    display: flex;    
+}
+h1{
+    padding: 0;
+}
+h2{
+    font-size: 25px;
+}
+h3{
+    font-size: 20px;
+}
+.container .card img{
+    border-radius: 100px;
+}
+.container .card:first-child{
+    margin-left: 0;
+}
+.container .card:hover{
+    background-color: rgb(4, 4, 73);
+    box-shadow: 2px 5px 15px rgb(4, 4, 73);
+    color:#ffffff;
+    transform: scale(1.200); /*Serve pra aumentar o card quando passamos o curso no mouse   */
+}
+.container .card .card-conteudo ul{
+    padding: 10px 30px;
+    padding-bottom: 20px;
+}
+.container .card .card-conteudo ul li {
+    list-style: none;
+    padding: 5px 0; /*Espaçp entre as linhas da lista*/
+}
+.container .card .card-conteudo ul li i{    
+    margin-right: 5px;
+}
+.container .card .conteudo a{
+    width:100px; /*Tamanho do botão*/
+    padding: 10px 20px;
+    background: rgb(207, 207, 207);
+    margin-bottom: 10px;
+    outline: none;
+    cursor: pointer;
+    transition: 0.3s;
+    font-size: 80%;
+    font-weight: 500;
+    border-radius: 50px;
+  
+}
+.container .card .conteudo a:hover{
+    background: rgb(35, 207, 49);
+    letter-spacing: 1.2px;
+}
+
+@media screen and (max-width: 700px){
+    .container{
+        flex-direction: column;
+    }
+    .container .card{
+        margin-left: 0;
+        margin-bottom: 30px;
+    }
+    .container .card:last-child{
+        margin-bottom: 0;
+    }
+}
+
+@media screen and (max-width: 400px){
+    .container{
+        flex-direction: column;
+    }
+    #texto{
+        font-size: 10px;
+        align-items: center;
+    }
+    .container .card{
+        margin-left: 0;
+        margin-bottom: 30px;
+        font-size: 20px;
+    }
+    .container .card:last-child{
+        margin-bottom: 0;
+    }
+}
+
