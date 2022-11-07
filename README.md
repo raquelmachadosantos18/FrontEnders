@@ -22,7 +22,7 @@ Todas as páginas devem utilizar o mesmo cabeçalho com menu de navegação e ro
 □ CEP (que completa os demais campos do endereço com consulta à API e trata erros);
 □ Campos de endereço (estado, cidade, bairro, rua, número, complemento).
 
- Página de contato:
+ ⇨Página de contato:
 .Deve conter contato dos alunos envolvidos no projeto;
 .Algumas páginas serão criadas também para simular algumas funções, elas não vão realizar por completo suas funções (login por exemplo apenas vai mostrar sucesso e validar sem realmente realizar o login do usuário).
 
