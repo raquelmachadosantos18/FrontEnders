@@ -12,8 +12,23 @@ function validateFields() {
     }
 }
 
+//Modo Noturno
+const chk = document.getElementById('chk')
+const contato = document.getElementById('contato_form')
+
+chk.addEventListener('change', ()=> {
+    document.body.classList.toggle('dark')
+    $('#contato_form').css('background','black')
+});
 
 
+
+// Botões de Aumento e diminuição de Fonte
+const btns = document.querySelectorAll('button.but');
+
+btns[0].addEventListener('click', () => {
+    document.body.classList.toggle('acess')
+});
 
 
 /*
