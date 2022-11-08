@@ -1,0 +1,277 @@
+<!doctype html>
+<html lang="pt-br">
+
+<head>
+  <title>Página Inicial</title>
+  
+  <meta charset="utf-8">
+  <link rel="shortcut icon" href="img/favicon/favicon.png" type="image/x-icon">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="node_modules/bootstrap/dist/css/bootstrap.css">
+  <link rel="stylesheet" href="node_modules/bootstrap-icons/font/bootstrap-icons.css">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css"> <!--Icones do Rodapé-->
+ <link rel="stylesheet" href="css/estiloCliente - Copia.css">
+ <link rel="canonical" href="https://getbootstrap.com/docs/5.2/examples/jumbotron/">
+ <link href="../assets/dist/css/bootstrap.min.css" rel="stylesheet"> <!--Exemplo do BootStrap-->
+
+
+ <style>
+  form, h1{
+    text-align: center;
+  }
+
+  button[disabled]{
+    opacity: 0.7;
+  }
+
+  p {
+    text-align: center;
+    font-size: 1.5em;
+  }
+
+  #texto1{
+    height: 700px;
+    background-color: rgb(0, 174, 255);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+
+  }
+
+  #texto2{
+    height: 500px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    padding: auto;
+  }
+
+  .title{
+    font-size: 5em;
+  }
+  .botao{
+    width: 350px;
+    padding: 15px 20px;
+    border: 1px solid #eee;
+    border-radius: 100px;
+    background-color: #f5f4f2;
+    font-size: 18px;
+    
+  }
+
+.cartao{
+  background-color: rgb(0, 174, 255);
+} 
+
+ </style>
+ 
+</head>
+
+<body style="min-width:372px;">
+  
+     <!-- (BARRA DE NAVEG) Só mexer na parte de baixo se for realmente necessário! -->  
+     <nav class="navbar navbar-expand-lg navbar-dark border-bottom shadow-sm mb-3" style="background-color: #282a2c;">
+      <div class="container-fluid">
+          <h6><a class="navbar-brand" href="index.html" id="nome"><img src="img/logo2.png" alt=""></a></h6>
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target=".navbar-collapse"> <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="navbar-collapse collapse">
+            <ul class="navbar-nav flex-grow-1">
+              <li class="nav-item">
+                <a href="planos.html" class="nav-link text-white">Planos</a>
+              </li>
+              <li class="nav-item">
+                <a href="quem.html" class="nav-link text-white">Lista de Espera</a>
+              </li>
+              
+              <li class="nav-item">
+                <a href="equipe.html" class="nav-link text-white">Nossa equipe</a>
+              </li>
+            </ul> 
+            
+            <div id="modon" class="flex">
+              <i class="bi bi-brightness-high-fill" id="sun"></i>
+              
+              <input type="checkbox" class="checkbox" id="chk" />
+              <label class="label" for="chk">
+                  <div class="ball"></div>
+              </label>
+              <i class="bi bi-moon-fill" id="moon"></i>
+           </div>
+
+           <!-- Botões de Acessibilidade -->
+           <button class="but"> t T </button> <!--Melhorar o CSS dos Botões-->
+
+           
+          <!-- ----------------------------------------------------------------------- -->           
+
+         <div class="align-self-end">
+            <ul class=" navbar-nav">
+              <li class="nav-item">
+                <a href="entrar.html" class="nav-link text-white"> Cadastrar </a>
+             </li>
+             <li class="nav-item">
+                <a href="entrar.html" class="nav-link text-white"> Entrar </a>
+             </li>
+              
+            </ul>
+
+          </div>
+        </div>
+      </div>
+  </nav>
+    <!-- (BARRA DE NAVEG) Só mexer na parte de cima se for realmente necessário! -->
+
+   
+    
+    
+    <div id="texto1">
+      
+      <h1 class="title">Tenha um site de <br> dar orgulho!</h1><br>
+      
+        <p>Descubra a plataforma que oferece a liberdade de criar, gerenciar e desenvolver sua presença na web exatamente como você deseja.</p>
+        <a href="entrar.html"><input type="button" value="Começar" class="botao"></a>
+        
+  </div>
+
+  <div id="texto2">
+
+    <h1 class="title">A liberdade para criar o site que quiser</h1>
+    <p>
+      Crie seus próprios sites de alta qualidade. Seja para promover o seu negócio, mostrar seu trabalho, abrir a sua loja virtual ou criar um blog, você pode fazer tudo isso com a nossa plataforma. Basta entrar em contato!</p>
+  </div>
+
+  <div id="carrossel">
+    <!-- (SLIDES) Só mexer na parte de baixo se for realmente necessário! -->
+    <div id="carouselExampleControls" class="carousel slide" data-bs-ride="carousel">
+      <div class="carousel-inner">
+        <div class="carousel-item active" data-interval="1000">
+          <img src="img/slides/pi.png" alt="" class="img-fluid d-none d-md-block">
+          <img src="img/slides/1.png" alt="" class="img-fluid d-block d-md-none">
+        </div>
+        <div class="carousel-item" data-interval="1000">
+          <img src="img/slides/pi2.png" alt="" class="img-fluid d-none d-md-block">
+          <img src="img/slides/3.png" alt="" class="img-fluid d-block d-md-none">
+        </div>
+        <div class="carousel-item" data-interval="1000">
+          <img src="img/slides/pi3.png" alt="" class="img-fluid d-none d-md-block">
+          <img src="img/slides/2.png" alt="" class="img-fluid d-block d-md-none">
+        </div>
+      </div>
+      <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleControls"
+        data-bs-slide="prev">
+        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+        <span class="visually-hidden">Previous</span>
+      </button>
+      <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleControls"
+        data-bs-slide="next">
+        <span class="carousel-control-next-icon" aria-hidden="true"></span>
+        <span class="visually-hidden">Next</span>
+      </button>
+    </div>
+  </div>
+    <hr class="mt-3">
+    <!-- (SLIDES) Só mexer na parte de cima se for realmente necessário! -->
+
+  <div class="container py-4">
+    <div class="pb-3 mb-4 border-bottom">
+      <a href="/" class="d-flex align-items-center text-dark text-decoration-none">
+        
+      </a>
+    
+
+    <div class="p-5 mb-4 cartao rounded-3">
+      <div class="container-fluid py-5">
+        <h1 class="display-5 fw-bold">FrontEnders</h1>
+        <h2 >Como surgimos?</h2>
+        <p class="col-md-8 fs-4">
+          Nascemos da necessidade que os Devs iniciantes tinham de encontrar o seu primeiro projeto. Assim nós encurtamos o caminho entre eles e as empresas que estão no mercado. Trazendo para eles a experiência que é vivida no ambiente profissional.
+        </p>
+        
+      </div>
+    </div>
+
+    <div class="row align-items-md-stretch">
+      <div class="col-md-6">
+        <div class="h-100 p-5 text-bg-dark rounded-3">
+          <h2>Compromisso com novos Devs</h2>
+          <p>Nós assumimos a responsabilidade de ligar os dois pontos cruciais para o desenvolvimento de sites e app's. Mas sem esquecer do trabalho que é dedicado aos nossos devs para a realização dos seus projetos. </p>
+         
+        </div>
+      </div>
+      <div class="col-md-6">
+        <div class="h-100 p-5 cartao border rounded-3">
+          <h2>Seja um desenvolvedor parceiro!</h2>
+          <p>Nós temos as melhores condições para você iniciar seu primeiro projeto. E garantimos que muitos outros virão. <br> <a href="entrar.html">Clique aqui</a> e cadastre-se já! </p>
+         
+        </div>
+      </div>
+    </div>
+
+    </div>
+  </div>
+  
+
+
+<!-- (RODAPÉ) Início rodapé -->
+
+<footer class="border-top text-muted bg-black " >
+  <div id="rodape" >
+      <div class="row py-3">
+         <div class="col-12 col-md-4 text-center text-md-left text-light">
+            &copy; 2022 - FrontEnders <br>
+            Rua Ficticia Inexistente, nº 000, Oregon, Ohio <br>
+            CNPJ 00.000.000./0001-00
+         </div>
+         <div class="col-12 col-md-4 text-center text-light">
+          <a class="btn" href="https://www.youtube.com/"><i class="fab fa-youtube"></i></a>
+          <a class="btn" href="https://www.facebook.com/"><i class="fab fa-facebook"></i></a>
+         <a  class="btn" href="https://www.instagram.com/"><i class="fab fa-instagram"></i></a>
+         <a class="btn" href="https://web.whatsapp.com/"><i class="fab fa-whatsapp"></i></a><br>
+            
+          </div>
+         <div class="col-12 col-md-4 text-center text-md-right text-light ">
+          <a href="contato.html" class="text-decoration-none text-light">Contato</a><br>
+          Email:<a href="mailto:kellyshoes@gmail.com" class="texte-decoration-none text-light">frontenders@gmail.com</a><br>
+          Telefone: <a href="phone:21900000000" class="texte-decoration-none text-light">(21)90000-0000</a>
+        </div>
+      </div>
+  </div>
+  <!-- (RODAPÉ) Fim rodapé! -->
+
+
+
+   <!-- VLIBRAS: basta copiar e colar no final, antes do fechamento de body -->
+   <div vw class="enabled">
+    <div vw-access-button class="active"></div>
+    <div vw-plugin-wrapper>
+      <div class="vw-plugin-top-wrapper"></div>
+    </div>
+  </div>
+  <script src="https://vlibras.gov.br/app/vlibras-plugin.js"></script>
+  <script>
+    new window.VLibras.Widget('https://vlibras.gov.br/app');
+  </script>
+  
+  <!--------------------------------------------------------------------------->
+
+  <div style="background-color: rgb(19, 18, 18); text-align: center;" >
+    
+    <br>
+    <a href="https://transparencyreport.google.com/safe-browsing/search?url=" target="_blank" rel="noopener" aria-describedby="a11y-new-window-message"><img src="https://cdn.shopify.com/s/files/1/0500/9339/2024/files/Design_sem_nome__6_-removebg-preview.png?v=1664836259"></a>
+      <img src="">
+        <a href="https://www.sslshopper.com/ssl-checker.html#hostname=" target="_blank" rel="noopener" aria-describedby="a11y-new-window-message"><img src=""></a>
+    <p style="font-size:13px; color: gray; text-align: center;">Selos de Garantia - Loja 100% Segura.</p>
+      
+              <br>
+    </div>
+  
+
+</footer>
+  <script src="node_modules/bootstrap/dist/js/bootstrap.bundle.js"></script>
+  <script src="js/scriptTeste.js"></script>
+</body>
+
+</html>

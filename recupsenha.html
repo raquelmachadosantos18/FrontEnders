@@ -2,7 +2,9 @@
 <html lang="pt-br">
 
 <head>
-  <title>Planos</title>
+  <title>Recuperação de Senha
+
+  </title>
   
   <meta charset="utf-8">
   <link rel="shortcut icon" href="img/favicon/favicon.png" type="image/x-icon">
@@ -11,13 +13,33 @@
   <link rel="stylesheet" href="node_modules/bootstrap-icons/font/bootstrap-icons.css">
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css"> <!--Icones do Rodapé-->
   <link rel="stylesheet" href="css/estiloAltSenha.css">
-  <link rel="stylesheet" href="css/estilologin.css">
-  <link rel="stylesheet" href="css/equipe.css">
+ <link rel="stylesheet" href="css/estilologin.css">
 
+ <script type="text/javascript">
+  function validar(formulario){
+  
+      if(formulario.email.value == ''){
+          alert("O campo e-mail é obrigatório.");
+          return false;
+      } else if(formulario.email.value.indexOf(('@' && '.'),0)== -1){
+      alert("E-mail inválido.");
+      return false;
+    }else {
+      alert("Senha temporária enviada para o e-mail.");
+  }
+  }
+  
+  </script>
 
- 
+ <style>
+  form, h1{
+    text-align: center;
+  }
 
-
+  button[disabled]{
+    opacity: 0.7;
+  }
+ </style>
  
 </head>
 
@@ -67,7 +89,11 @@
              <li class="nav-item">
                 <a href="entrar.html" class="nav-link text-white"> Entrar </a>
              </li>
-             
+              <li class="nav-item">
+                <a href="" class="nav-link text-white">
+                    <i class="bi-cart" style="font-size:24px"></i>
+                </a>
+              </li>
             </ul>
 
           </div>
@@ -76,136 +102,79 @@
   </nav>
     <!-- (BARRA DE NAVEG) Só mexer na parte de cima se for realmente necessário! -->
 
-    <div id="texto">
-      <h1>NOSSA EQUIPE FRONTENDERS</h1>
-      <P>Conheça a equipe responsável por todas as entregas da empresa FrontEnders.</P>
-       <p>Galera que trabalha sempre dando seu máximo para entregar um um projeto de qualidade a seus clientes.</P>
-  </div>
+    <header class="container">
+     
+    </header>
+    
+    <div class="container">
 
-
-<div class="container">
-
-<!--Primeiro card-->
-  <div class="card">
-    <div class="img">
-      <img src="img/FRONTENDERS.png" width="150px" heigth="150px">
-      <h2>MARIANA</h2>
-      <p>Pires</p>
-      <h3>Co-facilitadora <br>.</h3>
       
-      <div class="conteudo">
-        <p>
 
-        </p>
-        <a href="https://github.com/"><i class="bi bi-github"></i></a> <a href="https://www.whatsapp.com/"><i class="bi bi-whatsapp"></i></a>
-      </div>
-    </div>
-  </div>
-  <!--Segundo card-->
-  <div class="card">
-    <div class="img">
-      <img src="img/FRONTENDERS.png" width="150px" heigth="150px">
-      <h2>RAQUEL</h2>
-      <p>Machado</p>
-      <h3>Gestor de Conhecimento</h3>
-      <div class="conteudo">
-        <p>
+          <div class="formulario">
 
-        </p>
-        <a href="https://github.com/"><i class="bi bi-github"></i></a> <a href="https://www.whatsapp.com/"><i class="bi bi-whatsapp"></i></a>
-      </div>
-    </div>
-  </div>
-<!--Terceiro card-->
-<div class="card">
-  <div class="img">
-    <img src="img/FRONTENDERS.png" width="150px" heigth="150px">
-    <h2>GUSTAVO</h2>
-    <p>Cerqueira</p>
-    <h3>Gestor de Gente e Engajamento</h3>
-    <div class="conteudo">
-      <p>
+           <form name="formulario" onsubmit="return validar(this);" action="#" method="post"><!--Aqui em ACTION é a página que voce entra apos fazer login-->
+             <!--<input type="hidden" name="destino" value="kellyshoes@gmail.com" /> Serve para receber os dados quando a pagina estiver hospedada, por enquanto esta só de exemplo--->
+         
+             <input type="hidden" name="enviado" value="file:///C:/Users/Programador.Carioca/Desktop/M%C3%B3dulo%201/contatoteste.html" />
+           
+            
+              <h2>Recuperação de Senha</h2><br>
+              <p>Informe abaixo o e-mail cadastrado.</p>
 
-      </p>
-      <a href="https://github.com/"><i class="bi bi-github"></i></a> <a href="https://www.whatsapp.com/"><i class="bi bi-whatsapp"></i></a>
-    </div>
-  </div>
-</div> 
-<!--Quarto card-->
-<div class="card">
-  <div class="img">
-    <img src="img/FRONTENDERS.png" width="150px" heigth="150px">
-    <h2>MARIA</h2>
-    <p>Feliciano</p>
-    <h3>Colaboradora<br> I</h3>
-    <div class="conteudo">
-      <p>
+                <input name="email" placeholder="E-mail *"> <br> <br>
 
-      </p>
-      <a href="https://github.com/"><i class="bi bi-github"></i></a> <a href="https://www.whatsapp.com/"><i class="bi bi-whatsapp"></i></a>
-    </div>
-  </div>
-</div> 
-<!--Quinto card-->
-<div class="card">
-  <div class="img">
-    <img src="img/FRONTENDERS.png" width="150px" heigth="150px">
-    <h2>IAGO</h2>
-    <p>Silveira</p>
-    <h3>Colaborador <br>II</h3>
-    <div class="conteudo">
-      <p>
-
-      </p>
-      <a href="#"><i class="bi bi-github"></i></a> <a href="https://www.whatsapp.com/"><i class="bi bi-whatsapp"></i></a>
-    </div>
-  </div>
-</div>
-</div>
+                <input type="submit" href='#' value="Enviar"><br><!--Botão para enviar a mensagem-->
+              
+            </form>
+          </div> <!--Fechamento da div formulário-->
+    
+    </div><!--Fechamento da div Maps-->
+    </div><!--Fechamento da div Sociais-->
+  </div><!--Fechamento da div Container-->
+      
 
 
 
+  
 <!-- (RODAPÉ) Início rodapé -->
 
 <footer class="border-top text-muted bg-black" >
-  <div id="rodape"  >
+  <div id="rodape" >
       <div class="row py-3">
-        <div class="col-12 col-md-4 text-center text-md-left text-light">
+         <div class="col-12 col-md-4 text-center text-md-left text-light">
             &copy; 2022 - FrontEnders <br>
             Rua Ficticia Inexistente, nº 000, Oregon, Ohio <br>
             CNPJ 00.000.000./0001-00
          </div>
-
          <div class="col-12 col-md-4 text-center text-light">
           <a class="btn" href="https://www.youtube.com/"><i class="fab fa-youtube"></i></a>
           <a class="btn" href="https://www.facebook.com/"><i class="fab fa-facebook"></i></a>
-          <a class="btn" href="https://www.instagram.com/"><i class="fab fa-instagram"></i></a>
-          <a class="btn" href="https://web.whatsapp.com/"><i class="fab fa-whatsapp"></i></a><br>
-        
+         <a  class="btn" href="https://www.instagram.com/"><i class="fab fa-instagram"></i></a>
+         <a class="btn" href="https://web.whatsapp.com/"><i class="fab fa-whatsapp"></i></a><br>
             
           </div>
-          <div class="col-12 col-md-4 text-center text-md-right text-light ">
-            <a href="contato.html" class="text-decoration-none text-light">Contato</a><br>
-            Email:  <a href="mailto:kellyshoes@gmail.com" class="texte-decoration-none text-light">  frontenders@gmail.com</a><br>
-            Telefone:  <a href="phone:21900000000" class="texte-decoration-none text-light" >  (21)90000-0000</a>
-          </div>
+         <div class="col-12 col-md-4 text-center text-md-right text-light">
+          <a href="contato.html" class="text-decoration-none text-light">Contato</a><br>
+          Email:<a href="mailto:kellyshoes@gmail.com" class="texte-decoration-none text-light">frontenders@gmail.com</a><br>
+          Telefone: <a href="phone:21900000000" class="texte-decoration-none text-light">(21)90000-0000</a>
         </div>
-    </div>
+      </div>
+  </div>
   <!-- (RODAPÉ) Fim rodapé! -->
 
-
-  <!-- VLIBRAS -->
-<div vw class="enabled">
-  <div vw-access-button class="active"></div>
-  <div vw-plugin-wrapper>
-    <div class="vw-plugin-top-wrapper"></div>
-  </div>
-</div>
-<script src="https://vlibras.gov.br/app/vlibras-plugin.js"></script>
-<script>
-  new window.VLibras.Widget('https://vlibras.gov.br/app');
-</script>
-
+     <!-- VLIBRAS: basta copiar e colar no final, antes do fechamento de body -->
+     <div vw class="enabled">
+      <div vw-access-button class="active"></div>
+      <div vw-plugin-wrapper>
+        <div class="vw-plugin-top-wrapper"></div>
+      </div>
+    </div>
+    <script src="https://vlibras.gov.br/app/vlibras-plugin.js"></script>
+    <script>
+      new window.VLibras.Widget('https://vlibras.gov.br/app');
+    </script>
+    
+    <!--------------------------------------------------------------------------->
 
 
   <div style="background-color: rgb(19, 18, 18); text-align: center;" >
@@ -219,13 +188,10 @@
               <br>
     </div>
 
-  </footer>
-    
+    </footer>
     
   <script src="node_modules/bootstrap/dist/js/bootstrap.bundle.js"></script>
-  <script src="jquery-3.1.1.min.js" type="text/javascript"></script>
-  <script src="js/planos.js" type="text/javascript"></script>
-
+  <script src="js/scriptTeste.js"></script>
 </body>
 
 </html>
